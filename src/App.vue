@@ -5,7 +5,7 @@ import Header from "./components/Header.vue";
 
 <template>
   <main>
-    <Header app-name="Library UPC" />
+    <Header/>
     <div class="side"></div>
     <div class="center"></div>
     <Footer class="footer" />

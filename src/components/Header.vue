@@ -3,29 +3,22 @@
         <div class="menu-icon">
             <img src="/basic-gear-setting-svgrepo-com.svg" alt="Menu Icon">
         </div>
-        <h1 class="logo">{{ appName }}</h1>
-        <div class="profile-pic">
-            <img src="/ProfilePic.png" alt="Profile Picture">
-        </div>
+        <h1 class="logo">UPDate</h1>
+        <button class="button">Log-in</button>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Header',
-    props: {
-        appName: {
-            type: String,
-            required: true
-        }
-    },
 }
 </script>
 
 <style scoped>
 .header {
-    background: #1abc9c;
+    background: white;
     grid-column: span 3;
+    color: red;
     line-height: 5.5;
     text-align: center;
     display: flex;
@@ -47,7 +40,7 @@ export default {
     display: inline-block;
     margin: 0;
     font-size: 1.5rem;
-    color: #fff;
+    color: red;
     text-transform: capitalize;
     max-width: 100%;
 }
@@ -61,5 +54,23 @@ export default {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+}
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: #f44336; 
+  border: 2px solid #f44336;
+}
+.button:hover {
+  background-color: #f44336;
+  color: white;
 }
 </style>
