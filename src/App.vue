@@ -1,11 +1,13 @@
 <script setup>
 import Footer from "./components/Footer.vue";
 import Header from "./components/Header.vue";
+import HeaderImage from "./components/HeaderImage.vue";
 </script>
 
 <template>
+  <Header class="header"/>
   <main>
-    <Header/>
+    <HeaderImage />
     <div class="side"></div>
     <div class="center"></div>
     <Footer class="footer" />
@@ -16,8 +18,15 @@ import Header from "./components/Header.vue";
 main {
   grid-column: span 2;
   display: grid;
+  margin-top: 100px;
   grid-template-columns: 1fr 3fr;
-  grid-template-rows: 2fr 10fr 1fr;
+  grid-template-rows: 1fr 10fr 1fr;
+}
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 .footer {
   background-color: red;

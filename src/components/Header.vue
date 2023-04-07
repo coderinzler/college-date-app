@@ -1,60 +1,57 @@
 <template>
-    <div class="header">
-        <div class="menu-icon">
-            <img src="/basic-gear-setting-svgrepo-com.svg" alt="Menu Icon">
-        </div>
-        <h1 class="logo">UPDate</h1>
-        <button class="button">Log-in</button>
+  <div class="header">
+    <div class="menu-icon">
+      <div>
+        <img src="../assets/img/logo_upc_red.png" alt="Logo UPC" />
+      </div>
+      <h1 class="logo">UPDate</h1>
     </div>
+    <h2 class="language">EN</h2>
+    <div class="profile-pic">
+      <button class="button button1">Log-in</button>
+      <button class="button button2">Register</button>
+    </div>
+  </div>
 </template>
 
 <script>
 export default {
-    name: 'Header',
-}
+  name: "Header",
+};
 </script>
 
 <style scoped>
 .header {
-    background: white;
-    grid-column: span 3;
-    color: red;
-    line-height: 5.5;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: white;
+  grid-column: span 3;
+  color: red;
+  text-align: center;
+  min-height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: lightgrey 1px solid;
 }
 
-.menu-icon{
-    margin-top: 1rem;
-    margin-left: 2rem;
+.menu-icon {
+  display: flex;
+  margin: auto;
+  margin-left: 2rem;
 }
 
-.menu-icon img{
-    height: 30px;
-    width: 30px;
+.menu-icon img {
+  height: 48px;
+  width: 48px;
+}
+.language{
+    padding-right: 10px;
 }
 
 .logo {
-    display: inline-block;
-    margin: 0;
-    font-size: 1.5rem;
-    color: red;
-    text-transform: capitalize;
-    max-width: 100%;
+  color: red;
+  font-weight: bold;
 }
 
-.profile-pic{
-    margin-top: 2rem;
-    margin-right: 2rem;
-}
-
-.profile-pic img{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
 .button {
   border: none;
   padding: 16px 32px;
@@ -62,15 +59,30 @@ export default {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
-  background-color: white; 
-  color: #f44336; 
+  margin: auto;
+  margin-right: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
   border: 2px solid #f44336;
 }
-.button:hover {
+.button1{
+  color: #f44336;
+  background-color: white;
+}
+.button1:hover {
   background-color: #f44336;
   color: white;
+}
+.button2{
+  background-color: #f44336;
+  color: white;
+
+}
+.button2:hover{
+  color: #f44336;
+  background-color: white;
+
 }
 </style>
