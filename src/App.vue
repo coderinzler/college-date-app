@@ -1,47 +1,43 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Footer from "./components/Footer.vue";
+import Header from "./components/Header.vue";
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
   <main>
-    <TheWelcome />
+    <Header app-name="Library UPC" />
+    <div class="side"></div>
+    <div class="center"></div>
+    <Footer class="footer" />
   </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+main {
+  grid-column: span 2;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 2fr 10fr 1fr;
 }
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.footer {
+  background-color: red;
+  grid-column: span 3;
 }
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.center {
+  grid-column: span 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: yellow;
+  grid-gap: 60px 120px;
+  padding: 40px;
+}
+.side {
+  grid-column: span 1;
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  padding: 20px;
 }
 </style>
