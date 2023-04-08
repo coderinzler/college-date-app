@@ -2,25 +2,26 @@
 import Footer from "./components/Footer.vue";
 import Header from "./components/Header.vue";
 import HeaderImage from "./components/HeaderImage.vue";
+import TopBar from "@/components/TopBar.vue";
 </script>
 
 <template>
-  <Header class="header"/>
+  <Header class="header"></Header>
   <main>
-    <HeaderImage />
-    <div class="side"></div>
-    <div class="center"></div>
-    <Footer class="footer" />
+  <HeaderImage />
+  <TopBar class="topbar" />
+  <Footer class="footer" />
   </main>
 </template>
 
 <style scoped>
-main {
-  grid-column: span 2;
-  display: grid;
-  margin-top: 100px;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 10fr 1fr;
+
+main{
+    grid-column: span 2;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 10fr 1fr;
 }
 .header{
   position: fixed;
@@ -28,25 +29,14 @@ main {
   width: 100%;
   z-index: 100;
 }
-.footer {
-  background-color: red;
+
+.topbar{
   grid-column: span 3;
+  bottom: 44px;
 }
-.center {
-  grid-column: span 2;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
-  background-color: yellow;
-  grid-gap: 60px 120px;
-  padding: 40px;
+.footer {
+    background-color: red;
+    grid-column: span 3;
 }
-.side {
-  grid-column: span 1;
-  background-color: blue;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-gap: 20px;
-  padding: 20px;
-}
+
 </style>
