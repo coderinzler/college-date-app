@@ -2,7 +2,7 @@
   <div class="header">
     <div class="menu-icon">
       <div>
-        <img src="src/assets/img/Logo UPC - blanco_bg.png" alt="Logo UPC" />
+        <img src="../assets/img/logo_upc_red.png" alt="Logo UPC" />
       </div>
       <h1 class="logo">UpDate</h1>
     </div>
@@ -49,7 +49,6 @@ export default {
 }
 
 .logo {
-    font-family: "Outfit";
   color: red;
   font-weight: bold;
 }
