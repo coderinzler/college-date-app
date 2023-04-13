@@ -7,6 +7,7 @@
       <h1 class="logo">UPDate</h1>
     </div>
     <h2 class="language">EN</h2>
+    <!--Testline-->
     <div class="profile-pic">
       <button class="button button1">Log-in</button>
       <button class="button button2">Register</button>
