@@ -4,7 +4,7 @@
       <div>
         <img src="../assets/img/logo_upc_red.png" alt="Logo UPC" />
       </div>
-      <h1 class="logo">UPDate</h1>
+      <h1 class="logo">UpDate</h1>
     </div>
     <h2 class="language">EN</h2>
     <!--Testline-->
@@ -46,6 +46,7 @@ export default {
 }
 .language{
     padding-right: 10px;
+    margin-right: 30px;
 }
 
 .logo {
