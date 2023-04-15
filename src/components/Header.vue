@@ -2,7 +2,7 @@
   <div class="header">
     <div class="menu-icon">
       <div>
-        <img src="src/assets/img/Logo UPC - color.png" alt="Logo UPC" />
+        <img src="../assets/Logo%20UPC%20-%20color.png" alt="Logo UPC" />
       </div>
       <h1 class="logo">UpDate</h1>
     </div>
