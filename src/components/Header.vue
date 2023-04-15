@@ -2,7 +2,7 @@
   <div class="header">
     <div class="menu-icon">
       <div>
-        <img src="../assets/img/logo_upc_red.png" alt="Logo UPC" />
+        <img src="src/assets/img/Logo UPC - color.png" alt="Logo UPC" />
       </div>
       <h1 class="logo">UpDate</h1>
     </div>
@@ -25,7 +25,7 @@ export default {
 .header {
   background: white;
   grid-column: span 3;
-  color: red;
+  color: #e30613;
   text-align: center;
   min-height: 100px;
   display: flex;
@@ -50,8 +50,9 @@ export default {
 }
 
 .logo {
-  color: red;
-  font-weight: bold;
+    color: #e30613;
+    font-weight: bold;
+    padding-left: 8px;
 }
 
 .button {
